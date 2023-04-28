@@ -15,7 +15,7 @@ body{
 
 
 .introduction{
-    background: url(../img/img_arriere_plan/igloo_hiver.jpg) no-repeat 0 0;
+    background: url(../img/img_arriere_plan_optimisees/igloo_hiver.jpg) no-repeat 0 0;
     background-size: cover;
     background-position: 50% 100%;
     color: white; 
@@ -52,6 +52,28 @@ body{
     color: #0a263f;
 }
 
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
+
 /*--------------------------------------------*/
 /*--------  Personnage principal -------------*/
 /*--------------------------------------------*/
@@ -62,38 +84,36 @@ img.monstre{
     position: absolute;
 }
 
-div.perso-monstre
+.perso-monstre
 {
     border: 3px solid rgba(0,0,0,0.2);
-
     width: 100%;
     max-width: 30vh;
     aspect-ratio: 1/1;
     position: absolute;
-   
+    z-index: 100;
+}
 
+
+div.perso-monstre.monstre-01
+    {
     background-image:url('../img/img_personnages/monster_walk_spritesheet.png'); 
     /* note: ne pas mettre de no-reapt sur le background */
     background-position: 0 0;
-
 
     background-size: auto 100%;
     /* ou */
     background-size: 3700% 100%;  /*(37 image * 100%)*/
 
-
-
     /* si nécessaire, ajouter une aspect ratio : format image originale et ensutie https://andrew.hedges.name/experiments/aspect_ratio/ */
     aspect-ratio: 1/1;
-
-
 
     animation: monstrewalk 1.7s steps(37) infinite paused;
 }
 
 
 /* responsive animated sprite sheet : http://jsfiddle.net/gfpL8dzj/ */
-body.is-scrolling div.perso-monstre
+body.is-scrolling div.perso-monstre.monstre-01
 {
     animation-play-state: running;
  
@@ -184,22 +204,63 @@ section{
     position: relative;
     height: 100vh;
     width: 100vw;
+    border: 1px solid red;
     overflow: hidden;
 }
 
 
 
 #chapitre1{
-    background: url(../img/img_arriere_plan/champs_hiver_pente.jpg) no-repeat 0 0;
+    background: url(../img/img_arriere_plan_optimisees/champs_hiver_pente.jpg) no-repeat 0 0;
     background-size: cover;
     background-position: 50% 100%;
 }
 
 #chapitre2{
-    background: url(../img/img_arriere_plan/montagne_hiver.jpg) no-repeat 0 0;
+    background: url(../img/img_arriere_plan_optimisees/montagne_hiver.jpg) no-repeat 0 0;
     background-size: cover;
     background-position: 50% 100%;
 }
+
+#chapitre3{
+    background: url(../img/img_arriere_plan_optimisees/champs_hiver.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+#chapitre4{
+    background: url(../img/img_arriere_plan_optimisees/montagne_arc-en-ciel.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+#chapitre5{
+    background: url(../img/img_arriere_plan_optimisees/chute_deau.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+#chapitre6{
+    background: url(../img/img_arriere_plan_optimisees/dessus_eau.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+
+#chapitre7{
+    background: url(../img/img_arriere_plan_optimisees/sous_eau_bulles2.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+#chapitre8{
+    background: url(../img/img_arriere_plan_optimisees/sous_eau_sol.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+
+
 
 
 
