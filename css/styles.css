@@ -63,7 +63,6 @@ ul.technique-gsap{
     padding: 10px 20px 12px 20px;
     margin: 0;
     max-width: 300px;
-
     position: absolute;
     z-index: 1000;
     top: 0;
@@ -148,6 +147,8 @@ body.is-scrolling div.perso-monstre.monstre-01
     left: -50%;
 }
 
+/* Intro */
+
 .introduction .souris {
 	width: 50px;
 	height: 90px;
@@ -190,6 +191,65 @@ body.is-scrolling div.perso-monstre.monstre-01
 	}
 }
 
+/* chapitre 3 */
+
+
+.nuage{
+    position: absolute;
+    top: 10vh;
+    left: 0vw;
+}
+
+.nuage.nuage1{
+    top: 50vh;
+    left: 50vw;
+}
+
+/* chapitre 4 */
+.paysage-arc,
+#motionpath-arc{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    max-width: 100%;
+    z-index: 4;
+}
+#motionpath-arc{
+    z-index: 7;
+}
+
+.orignal{
+    position: absolute;
+    left: 10vw;
+    top: 70vh; 
+    z-index: 10;
+    width:10vw;
+}
+
+.hyene{
+    position: absolute;
+    left: 8vw;
+    top: 50vh; 
+    z-index: 10;
+    width:10vw;
+    /*border: 1px solid red;*/
+}
+
+
+/* chapitre 7 */
+.path-baleine{
+    stroke: white;
+}
+
+/* chapitre 8 */
+#svg-pieuvre{
+    width: 30vw;
+    left: 30vw;
+    top: 10vh;
+    position: absolute;
+}
+
 
 
 /*--------------------------------------------*/
@@ -223,14 +283,14 @@ section{
 }
 
 #chapitre3{
-    background: url(../img/img_arriere_plan_optimisees/champs_hiver.jpg) no-repeat 0 0;
+    background: url(../img/img_arriere_plan_optimisees/montagne_au_dessus_nuage.jpg) no-repeat 0 0;
     background-size: cover;
     background-position: 50% 100%;
 }
 
 #chapitre4{
-    background: url(../img/img_arriere_plan_optimisees/montagne_arc-en-ciel.jpg) no-repeat 0 0;
-    background-size: cover;
+   /* background: url(../img/img_arriere_plan_optimisees/montagne_arc-en-ciel.jpg) no-repeat 0 0;
+    background-size: cover;*/
     background-position: 50% 100%;
 }
 

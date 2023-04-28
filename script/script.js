@@ -1,4 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MotionPathPlugin);
+
+
+
+
 let isScrolling;
 const body = document.querySelector("body");
 
@@ -47,7 +52,6 @@ gsap.fromTo('.monstre-01', {
 gsap.timeline({
   scrollTrigger: {
     trigger: "#chapitre2",
-    markers: true,
     pin: true,
     toggleActions: "play complete reverse reset"
 
@@ -77,6 +81,152 @@ gsap.timeline({
     duration: 2,
     ease: "elastic"
   });
+
+
+// animation du chapitre 3
+
+gsap.to("#chapitre3", {
+  backgroundPosition: "50% 0%",
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#chapitre3",
+    scrub: true
+  }
+});
+
+gsap.fromTo(".monstre-03", {
+  x: "75vw",
+  y: "0vh"
+},
+  {
+    x: "75vw",
+    y: "100vh",
+    ease: "power2.in",
+    scrollTrigger: {
+      trigger: "#chapitre3",
+      scrub: true
+    }
+  });
+
+
+
+//animation chapitre 4
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: "#chapitre4",
+    scrub: true,
+    pin: true
+  }
+})
+  .to(".hyene", {
+    motionPath: {
+      path: ".motionpath-arc",
+      align: ".motionpath-arc",
+      autoRotate: true,
+      xPercent: 50,
+      yPercent: 50,
+      alignOrigin: [0.5, 0.5]
+    }
+
+  })
+  .to(".hyene", {
+    opacity: 0
+  },
+  "-=0.5");
+
+
+gsap.fromTo(".monstre-04", {
+  x: "75vw",
+  y: "0vh"
+},
+  {
+    x: "75vw",
+    y: "100vh",
+    ease: "power2.in",
+    scrollTrigger: {
+      trigger: "#chapitre4",
+      scrub: true
+    }
+  });
+
+
+
+
+
+
+
+
+//animation chapitre 7
+gsap.set(".path-baleine", {
+  fillOpacity: 0,
+  x: "-5vw"
+
+});
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: "#chapitre7",
+    scrub: true,
+    start: "50% 80%",
+    end: "70% 30%"
+  }
+
+})
+  .fromTo(
+    ".path-baleine",
+    {
+      drawSVG: "0% 0%"
+    },
+    {
+      drawSVG: "0% 100%"
+    }
+  )
+  .fromTo(
+    ".path-baleine",
+    {
+      fillOpacity: 0
+    },
+    {
+      fillOpacity: 1
+    }
+  )
+  .to(
+    ".path-baleine",
+    {
+      x: "10vw"
+    }
+  );
+
+//animation chapitre 8
+
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: "#chapitre8"
+  }
+
+})
+  .fromTo(" #svg-pieuvre", {
+    y: "10vh"
+  },
+    {
+      y: "18vh",
+      ease: "power2.inOut",
+      repeat: -1,
+      yoyo: true,
+      duration: 3
+    })
+
+
+
+
+
+
+
+
+
+
 
 
 
