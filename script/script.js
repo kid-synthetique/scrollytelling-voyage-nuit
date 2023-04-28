@@ -193,9 +193,10 @@ gsap.timeline({
     }
   )
   .to(
-    ".path-baleine",
+    "#svg-baleine",
     {
-      x: "10vw"
+      x: "50vw",
+      ease: "sine.inOut"
     }
   );
 
