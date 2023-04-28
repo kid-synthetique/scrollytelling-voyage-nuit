@@ -247,7 +247,7 @@ body.is-scrolling div.perso-monstre.monstre-01
 #svg-baleine{
     top: -20vh;
     width: 80vw;
-    border: 2px solid red;
+   
     position: absolute;
 }
 .path-baleine{
