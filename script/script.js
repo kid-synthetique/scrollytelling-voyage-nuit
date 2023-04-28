@@ -116,17 +116,17 @@ gsap.timeline({
   scrollTrigger: {
     trigger: "#chapitre4",
     scrub: true,
-    pin: true
+    pin: true,
+    pinSpacing: true
   }
 })
   .to(".hyene", {
+
     motionPath: {
       path: ".motionpath-arc",
       align: ".motionpath-arc",
       autoRotate: true,
-      xPercent: 50,
-      yPercent: 50,
-      alignOrigin: [0.5, 0.5]
+     alignOrigin: [0.5, 0.6]
     }
 
   })
@@ -168,8 +168,9 @@ gsap.timeline({
   scrollTrigger: {
     trigger: "#chapitre7",
     scrub: true,
-    start: "50% 80%",
-    end: "70% 30%"
+    pin: true,
+    start: "50% 50%",
+    markers: true
   }
 
 })

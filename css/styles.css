@@ -211,10 +211,15 @@ body.is-scrolling div.perso-monstre.monstre-01
     position: absolute;
     left: 0;
     top: 0;
-    width: auto;
-    max-width: 100%;
+    width: 100vw;
     z-index: 4;
+    height: 100vh;
 }
+.paysage-arc{
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
 #motionpath-arc{
     z-index: 7;
 }
@@ -233,11 +238,16 @@ body.is-scrolling div.perso-monstre.monstre-01
     top: 50vh; 
     z-index: 10;
     width:10vw;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 
 /* chapitre 7 */
+
+#svg-baleine{
+    top: -30vw;
+    width: 100vw;
+}
 .path-baleine{
     stroke: white;
 }
