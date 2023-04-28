@@ -245,8 +245,10 @@ body.is-scrolling div.perso-monstre.monstre-01
 /* chapitre 7 */
 
 #svg-baleine{
-    top: -30vw;
-    width: 100vw;
+    top: -20vh;
+    width: 80vw;
+    border: 2px solid red;
+    position: absolute;
 }
 .path-baleine{
     stroke: white;
