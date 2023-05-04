@@ -174,7 +174,7 @@ gsap.timeline({
   }
 
 })
-  .fromTo(
+  /*.fromTo(
     ".path-baleine",
     {
       drawSVG: "0% 0%"
@@ -182,7 +182,7 @@ gsap.timeline({
     {
       drawSVG: "0% 100%"
     }
-  )
+  )*/
   .fromTo(
     ".path-baleine",
     {
